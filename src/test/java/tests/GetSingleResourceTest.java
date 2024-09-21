@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class GetSingleResourceTests {
+public class GetSingleResourceTest {
     String id = " 2";
     String name="fuchsia rose";
     String year ="2001";

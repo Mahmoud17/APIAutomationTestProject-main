@@ -21,7 +21,7 @@ public class UserRequests {
                 .get(Constants.baseURL + Constants.resourceEndPoint + id);
     }
 
-    public static Response registration(String email, String password) {
+    public static Response registerUser(String email, String password) {
         return RestAssured.given().log().all().contentType("application/json")
                 .body("{\"email\": \"" + email + "\",\n" + "    \"password\": \"" + password + "\"}")
                 .post(Constants.baseURL + Constants.registerEndPoint);
